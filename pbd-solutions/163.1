@@ -1,0 +1,39 @@
+class Address {
+    String street;
+    String city;
+    String state;
+    int zip;
+}
+
+class Main {
+    public static void main(String[] args) throws Exception {
+
+        Address disneyLand = new Address();
+        disneyLand.street = "1313 Disneyland Dr";
+        disneyLand.city   = "Anaheim";
+        disneyLand.state  = "California";
+        disneyLand.zip    = 92802;
+
+        System.out.println(disneyLand.street + ", " + disneyLand.city + ", " + disneyLand.state + "  " + disneyLand.zip);
+        
+        
+        
+        Address myhouse = new Address();
+        myhouse.street = "12 Green Street";
+        myhouse.city = "Bay Town";
+        myhouse.state = "Florida";
+        myhouse.zip = 2910929;
+        
+        System.out.println(myhouse.street + ", " + myhouse.city + ", " + myhouse.state + ", " + myhouse.zip);
+        
+        Address myschool = new Address();
+        myschool.street = "Leslie Street";
+        myschool.city = "Chanfan";
+        myschool.state = "California";
+        myschool.zip = 8909183;
+        
+        System.out.println(myschool.street + ", " + myschool.city + ", " + myschool.state + ", " + myschool.zip);
+    
+        
+    }
+}
