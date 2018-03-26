@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Student{
+  
+  String name;
+  int grade;
+  double average;
+  
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    Student studentOne = new Student();
+    Student studentTwo = new Student();
+    Student studentThree = new Student();
+    Scanner input = new Scanner(System.in);
+    Student[] listOne = new Student[3];
+    
+    System.out.print("Enter the first student's name: ");
+    studentOne.name = input.next();
+    System.out.print("Enter the first student's grade: ");
+    studentOne.grade = input.nextInt();
+    System.out.print("Enter the first student's average: ");
+    studentOne.average = input.nextDouble();
+    listOne[0] = studentOne;
+    
+    System.out.print("Enter the second student's name: ");
+    studentTwo.name = input.next();
+    System.out.print("Enter the second student's grade: ");
+    studentTwo.grade = input.nextInt();
+    System.out.print("Enter the second student's average: ");
+    studentTwo.average = input.nextDouble();
+    listOne[1] = studentTwo;
+    
+    System.out.print("Enter the third student's name: ");
+    studentThree.name = input.next();
+    System.out.print("Enter the third student's grade: ");
+    studentThree.grade = input.nextInt();
+    System.out.print("Enter the third student's average: ");
+    studentThree.average = input.nextDouble();
+    listOne[2] = studentThree;
+    
+    System.out.println("The names are: " + listOne[0].name + " " + listOne[1].name + " " + listOne[2].name);
+    System.out.println("Their grades are: " + listOne[0].grade + " " + listOne[1].grade + " " + listOne[2].grade);
+    System.out.println("Their averages are: " + listOne[0].average + " " + listOne[1].average + " " + listOne[2].average);
+    
+    System.out.println("The average of the three students is: " + (listOne[0].average + listOne[1].average + listOne[0].average)/3);
+    
+    
+  }
+}
