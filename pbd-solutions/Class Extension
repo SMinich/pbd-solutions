@@ -34,7 +34,7 @@ class Fish extends Animal {
 
 class Ferret extends Animal {    
   public String ferretSound() {
-    return "ferretSound";
+    return "skrrra";
   }
 }
 
@@ -43,7 +43,23 @@ public class Main {
     Dog d1 = new Dog();
     d1.name = "Fluffy";
     d1.breed = "Bulldog";
+    
+    Cat c1 = new Cat();
+    c1.breed = "Tabby";
+    
+    Fish f1 = new Fish();
+    f1.species = "Goldfish";
+    f1.waterType = "Freshwater";
+    
+    Ferret fe1 = new Ferret();
+    
     System.out.println(d1.eat());     // from the baseclass (Animal)
     System.out.println(d1.bark());    // from the Dog class
+    
+    System.out.println(c1.breed);     // from Cat class
+    
+    System.out.println(f1.species);   // from Fish class
+    
+    System.out.println(fe1.ferretSound());     //from Ferret class
   }
 }
